@@ -23,6 +23,19 @@
     }
 
 </style>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'box-start':'rgba(243, 243, 243, 0.00)',
+          'box-end':'#F3F3F3',
+        }
+      }
+    }
+  }
+</script>
 </head>    
 <body>
  <header class="container mx-auto">
@@ -59,7 +72,7 @@
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn bg-[#B68C5A] font-poppins text-[16px] font-[400] text-white px-[29px] ">Free Consultation</a>
+              <a class="btn bg-[#B68C5A] font-poppins text-[16px] font-[400] text-white px-[29px] lg:h-[64px]">Free Consultation</a>
             </div>
           </div>
     </nav>
@@ -67,17 +80,107 @@
     <div class="hero rounded-xl" style="background-image: url(./images/banner.png);">
       <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
       <div class="hero-content text-center text-neutral-content">
-        <div class="px-[250px] py-[104px]">
+        <div class="lg:px-[250px] lg:py-[104px]">
           <h1 class="mb-5 text-[72px] font-[800] font-eb">We Provide Effective <br>Legal Solutions</h1>
-          <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-          <input type="text" name="" id="" class="w-[500px] h-[64px] rounded-xl pl-[20px] mr-[24px] font-poppins" placeholder="Search your services">
-          <button class="btn bg-[#B68C5A] text-white h-[64px] w-[150px] border-none font-poppins font-[500]">Search</button>
+          <p class="mb-6 w-[679px] font-poppins text-[16px] font-[400]">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          <input type="text" name="" id="" class="w-[500px] lg:h-[64px] rounded-xl lg:pl-[20px] mr-[24px] font-poppins" placeholder="Search your services">
+          <button class="btn bg-[#B68C5A] text-white lg:h-[64px] lg:w-[150px] border-none font-poppins font-[500]">Search</button>
         </div>
       </div>
     </div>
  </header>
- <main>
+ <main class="container mx-auto">
+    <!-- legal practice des -->
+    <section class="mt-[120px] space-y-[30px]">
+        <div class="text-center">
+          <h1 class="font-eb text-[40px] font-[800]">The Legal Practice Area</h1>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have <br>suffered alteration in some form, by injected humour.</p>
+        </div>
+        <!-- legal practice container -->
+        <div class="grid lg:grid-cols-3 ">
+          <div class="text-center border-[1px] border-transparent border-[#E7E7E7] flex flex-col items-center space-y-[30px] px-[70px] py-[56px]">
+            <img src="./images/business.png" alt="" >
+            <h2 class="font-eb text-[32px] font-[800]">Business Law</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <img src="./images/Frame.png" alt="">
+          </div>
 
+          <div class="text-center border-[1px] border-y-transparent border-[#E7E7E7] flex flex-col items-center space-y-[30px] px-[70px] py-[56px] bg-gradient-to-b from-box-start to-box-end">
+            <img src="./images/criminal.png" alt="">
+            <h2 class="font-eb text-[32px] font-[800]">Criminal Law</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <img src="./images/Frame.png" alt="">
+          </div>
+            
+          <div class="text-center border-[1px] border-transparent border-[#E7E7E7] flex flex-col items-center space-y-[30px] px-[70px] py-[56px]">
+            <img src="./images/child.png" alt="">
+            <h2 class="font-eb text-[32px] font-[800]">Child Support</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <img src="./images/Frame.png" alt="">
+          </div>
+
+          <div class="text-center border-[1px] border-x-transparent border-b-transparent border-[#E7E7E7] flex flex-col items-center space-y-[30px] px-[70px] py-[56px]">
+            <img src="./images/education.png" alt="">
+            <h2 class="font-eb text-[32px] font-[800]">Child Support</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <img src="./images/Frame.png" alt="">
+          </div>
+
+          <div class="text-center border-[1px] border-b-transparent border-[#E7E7E7] flex flex-col items-center space-y-[30px] px-[70px] py-[56px]">
+            <img src="./images/divorce.png" alt="">
+            <h2 class="font-eb text-[32px] font-[800]">Child Support</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <img src="./images/Frame.png" alt="">
+          </div>
+
+          <div class="text-center border-[1px] border-x-transparent border-b-transparent border-[#E7E7E7] flex flex-col items-center space-y-[30px] px-[70px] py-[56px]">
+            <img src="./images/tax.png" alt="">
+            <h2 class="font-eb text-[32px] font-[800]">Child Support</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <img src="./images/Frame.png" alt="">
+          </div>
+        </div>
+    </section>
+
+    <!-- client section -->
+    <section class="mt-[120px]">
+        <div class="text-center space-y-[24px]">
+          <h1 class="font-eb text-[40px] font-[800]">What Our Client Say</h1>
+          <p class="font-poppins text-[16px] text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have<br> suffered alteration in some form, by injected humour.</p>
+        </div>
+
+        <!-- coursol -->
+        <div class="carousel w-full mt-[64px] h-[600px]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./images/slider-1.jpg" class="w-full" />
+            
+            <img src="./images/Rectangle 7.png" alt="" class="absolute w-full h-[600px]">
+            <h1 class="absolute text-white">Awlad Hossain</h1>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+            
+          </div> 
+
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./images/slider-2.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./images/slider-3.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          
+        </div>
+    </section>
  </main>
  <footer>
 
